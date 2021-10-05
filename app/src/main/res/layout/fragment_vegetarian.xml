@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/_20dp"
+    android:layout_marginTop="@dimen/_20dp"
+    android:layout_marginEnd="@dimen/_20dp"
+    android:layout_marginBottom="@dimen/_50dp"
+    android:orientation="vertical"
+    tools:context=".fragment.VegetarianFragment">
+
+    <TextView
+        android:id="@+id/tvVegetarian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vegetarian"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_30sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVegetarian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20dp"
+        tools:listitem="@layout/item_recipe" />
+
+</LinearLayout>
